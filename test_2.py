@@ -13,7 +13,7 @@ def check(number):
     #小以外発生カウント
     incident_count = 0
     
-    with open ( "test_1.csv" , "r" ) as f :
+    with open ( "test.csv" , "r" ) as f :
         reader = csv . reader ( f )
         sorted_csv = sorted(reader, key=lambda x:(x[1], x[0]))
         for line in sorted_csv :
