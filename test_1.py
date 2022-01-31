@@ -11,7 +11,7 @@ import csv
 incident_log = ""
 #incident_flg = False
 
-with open ( "test_1.csv" , "r" ) as f :
+with open ( "test.csv" , "r" ) as f :
     reader = csv . reader ( f )
     #IPと時間でソート
     sorted_csv = sorted(reader, key=lambda x:(x[1], x[0]))
